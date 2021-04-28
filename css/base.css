@@ -1,0 +1,105 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Emilys Candy', cursive;
+}
+
+.header, .footer, .main {
+    font-size: 1em;
+}
+
+.header-title {
+    background: url(../images/bg-tijolo-azul.jpg);
+}
+
+.header-title-container, .footer-container, .container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header-title-container {
+    position: relative;
+}
+
+.header-title img, .header-title h1 {
+    display: inline-block;
+}
+
+.header-title img {
+    margin: 40px 0 40px 130px;
+    border-radius: 50px;
+}
+
+.header-title h1 {
+    position: absolute;
+    top: calc((286px - 48px) / 2);
+    right: 130px;
+    color: pink;
+    text-shadow: 0 -1px red;
+    font-size: 3em;
+}
+
+.header-nav {
+    background: pink;
+}
+
+.nav-menu li {
+    display: inline-block;
+    text-align: center;
+    background: #001133;
+    box-sizing: border-box;
+    width: 250px;
+    padding: 25px 0;
+    margin: calc((203px - 67px) / 2) calc((100% - 1000px) / 8);
+    border-radius: 20px;
+}
+
+.nav-menu li > a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: 25px 40px;
+    border-radius: 20px;
+}
+
+.nav-menu li:hover {
+    box-shadow: 0 0 20px 0px #00ffff;
+    transform: scale(1.1);
+}
+
+.nav-menu li > a:hover {
+    color: #00ffff;
+}
+
+.nav-menu li > a:active {
+    color: #f1b8ff;
+}
+
+.footer {
+    background: url(../images/bg-tijolo-vermelho-azul.jpg);
+}
+
+.footer img {
+    margin: 40px calc((940px - 188px) / 2) 20px;
+    border-radius: 50px;
+}
+
+.footer p {
+    text-align: center;
+    padding: 20px 0 40px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.box {
+    margin: 50px 0;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 4px outset pink;
+    border-radius: 20px;
+    background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+    box-shadow: 0 0 15px 1px black;
+}

@@ -1,0 +1,33 @@
+.products img {
+    width: calc(100% / 3);
+    vertical-align: top;
+    height: 400px;
+}
+
+.about {
+    background: linear-gradient(45deg, pink, white, pink, white, pink, white, pink, white);
+    padding: 1px 0;
+}
+
+.about h2, .about h3, .about p {
+    color: #1effe0e6;
+    text-shadow: 1px -1px 15px #112adc;
+}
+
+.about h2, .about h3 {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.about h2 {
+    font-size: 2.3em;
+}
+
+.about h3 {
+    font-size: 1.7em;
+}
+
+.about p {
+    margin: 0 0 20px 0;
+    font-size: 1.3em;
+}
