@@ -1,0 +1,33 @@
+.flavors {
+    padding: 50px 0;
+}
+
+.box {
+    width: 50%;
+    margin: 50px 25%;
+    transition: 0.4s;
+}
+
+.box:hover {
+    box-shadow: 0 0 20px 0px #00ffff;
+    transform: scale(1.1);
+}
+
+.flavors p {
+    text-align: center;
+}
+
+.flavors a {
+    font-size: 1.8em;
+    color: #1effe0e6;
+    text-shadow: 1px -1px 15px #112adc;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 640px) {
+
+    .box {
+        width: 100%;
+        margin: 50px 0;
+    }
+}

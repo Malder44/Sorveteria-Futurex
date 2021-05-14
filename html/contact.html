@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
     <head>
 
         <meta charset="UTF-8">
-        <title>Sorveteria Futurex</title>
+        <meta name="viewport" content="width=device-width">
+        <title>Sorveteria Futurex - Contato</title>
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/base.css">
-        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/contact.css">
         <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
 
     </head>
@@ -28,7 +30,7 @@
                     </li><li>
                         <a href="flavors.html">Sabores</a>
                     </li><li>
-                        <a href="localization.html">Localização</a>
+                        <a href="address.html">Localização</a>
                     </li><li>
                         <a href="contact.html">Contato</a>
                     </li>
@@ -36,25 +38,92 @@
             </section>
         </header>
 
-        <main>
-            
-            <h2>Nosso contato</h2>
+        <main class="main">
 
-            <section>
-                <div class="box">
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
+            <section class="contacts">
+
+                <div class="contacts-title">
+                    <h2>Nosso contato</h2>
                 </div>
-            </section>
-            
-            <section>
-                <div class="box">
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
+
+                <div class="contacts-info">
+                    <div class="contacts-container">
+                        <div class="box">
+                            <h3>Você pode conversar com a gente pelo zap,</h3>
+                            <p>Nosso whatsapp:</p>
+                            <p>(XX) XXXXX-XXXX</p>
+                        </div><div class="box">
+                            <h3>Pode ser pelo telefone,</h3>
+                            <p>Nosso telefone:</p>
+                            <p>(XX) XXXXX-XXXX</p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="box">
+                            <h3>Ou, se quiser, pode nos mandar uma mensagem por aqui!</h3>
+                        </div>
+                    </div>
                 </div>
+
             </section>
+
+            <form class="form">
+                
+                <fieldset class="text-inputs">
+                    <div class="container">
+                        <label for="input-name">
+                            Nome e sobrenome
+                            <input id="input-name" type="name" required>
+                        </label>
+                        <label for="input-email">
+                            Email
+                            <input id="input-email" type="email" placeholder="seuemail@dominio.com" required>
+                        </label>
+                        <label for="input-phone">
+                            Telefone
+                            <input id="input-phone" type="tel" placeholder="(XX) XXXXX-XXXX" required>
+                        </label>
+                        <label for="message">
+                            Mensagem
+                            <textarea id="message" cols="60" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="radio-inputs">
+                    <div class="container">
+                        <legend>Por qual meio você gostaria de receber nosso contato?</legend>
+                        <label for="radio-email">
+                            <input id="radio-email" type="radio" name="radio-box" checked>
+                            Email
+                        </label>
+                        <label for="radio-phone">
+                            <input id="radio-phone" type="radio" name="radio-box">
+                            Telefone
+                        </label>
+                        <label for="radio-wpp">
+                            <input id="radio-wpp" type="radio" name="radio-box">
+                            Whatsapp
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="newsletter">
+                    <div class="container">
+                        <label for="newsletter-checkbox">
+                            <input id="newsletter-checkbox" type="checkbox" checked>
+                            Gostaria de receber nossa newsletter e ficar por dentro das nossa promoções?
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="submit">
+                    <div class="container">
+                        <input type="submit" value="Enviar mensagem">
+                    </div>
+                </fieldset>
+
+            </form>
 
         </main>
 

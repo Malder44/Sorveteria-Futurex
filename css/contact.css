@@ -1,0 +1,166 @@
+.contacts, .form, .submit {
+    padding: 50px 0;
+}
+
+.contacts-title h2, .contacts-info h3, .contacts-info p {
+    text-align: center;
+}
+
+.contacts-title {
+    margin: 50px 0 0 0;
+}
+
+.contacts-title h2 {
+    font-size: 2em;
+}
+
+.contacts-info .box {
+    margin: 100px 5% 0;
+}
+
+.contacts-info h3, .contacts-info p {
+    color: #1effe0e6;
+    text-shadow: 1px -1px 15px #112adc;
+}
+
+.contacts-info h3 {
+    font-size: 1.5em;
+    margin: 0 0 20px;
+}
+
+.contacts-info p {
+    margin: 0 0 20px;
+    font-size: 1.3em;
+}
+
+.contacts-container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.contacts-container .box {
+    width: 39.8%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.text-inputs label, .text-inputs input, .text-inputs textarea, .radio-inputs label, .newsletter label {
+    display: block;
+}
+
+.text-inputs label, .radio-inputs label, .radio-inputs legend, .newsletter label {
+    margin: 0 5% 30px;
+    font-size: 1.3em;
+}
+
+.text-inputs input, .text-inputs textarea {
+    margin: 20px 0 0;
+    width: 60%;
+    padding: 20px;
+    font-size: 0.8em;
+    border-radius: 10px;
+    border: 4px outset pink;
+    outline: none;
+}
+
+.submit input {
+    width: 35%;
+    border: 4px outset pink;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 0 14px 1px black;
+    margin: 50px 30%;
+    padding: 20px;
+    background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+    font-size: 1.2em;
+    color: #1effe0e6;
+    text-shadow: 1px -1px 15px #112adc;
+    transition: 0.8s;
+}
+
+.submit input:hover {
+    transform: scale(1.16);
+    cursor: pointer;
+    text-shadow: 1px -1px 15px #18ffea;
+    box-shadow: 0 0 20px 0px #00ffff;;
+}
+
+@media screen and (max-width: 640px) {
+
+    .contacts-title {
+        margin: 0 0 30px 0;
+    }
+
+    .contacts-info .box {
+        margin: 30px 0 0;
+    }
+
+    .contacts-info h3, .contacts-info p {
+        line-height: 1.5em;
+    }
+
+    .contacts-container {
+        width: 90vw;
+    }
+
+    .contacts-container .box {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .text-inputs input, .text-inputs textarea {
+        width: 80%;
+        margin: 20px 0 0;
+    }
+
+    .radio-inputs legend, .newsletter label {
+        line-height: 1.5em;
+    }
+
+    .submit input {
+        width: 100%;
+        margin: 30px 0;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1240px) {
+
+    .contacts-title {
+        margin: 20px 0 50px 0;
+    }
+
+    .contacts-info .box {
+        margin: 50px 0 0;
+    }
+
+    .contacts-info h3, .contacts-info p {
+        line-height: 1.5em;
+    }
+
+    .contacts-container {
+        width: 90vw;
+    }
+
+    .contacts-container .box {
+        width: 40%;
+        margin: 30px 5%;
+        height: 250px;
+        display: inline-block;
+    }
+
+    .text-inputs input, .text-inputs textarea {
+        width: 80%;
+        margin: 20px 0 0;
+    }
+
+    .radio-inputs legend, .newsletter label {
+        line-height: 1.5em;
+    }
+
+    .submit input {
+        width: 50%;
+        margin: 30px calc((100% - 50%) / 2);
+    }
+
+}

@@ -1,0 +1,35 @@
+.address {
+    padding: 50px 0;
+}
+
+.address h2, .address p {
+    text-align: center;
+}
+
+.address h2 {
+    margin: 30px 0 50px;
+    font-size: 2em;
+}
+
+.address p {
+    margin: 30px 0;
+    font-size: 1.3em;
+}
+
+.address iframe {
+    width: 60%;
+    margin: 30px 20%;
+}
+
+@media screen and (max-width: 640px) {
+
+    .address p {
+        line-height: 1.6em;
+        font-size: 1.5em;
+    }
+
+    .address iframe {
+        width: 100%;
+        margin: 30px 0;
+    }
+}

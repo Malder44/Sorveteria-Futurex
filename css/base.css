@@ -7,7 +7,7 @@ body {
 }
 
 .header, .footer, .main {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .header-title {
@@ -21,10 +21,6 @@ body {
 
 .header-title-container {
     position: relative;
-}
-
-.header-title img, .header-title h1 {
-    display: inline-block;
 }
 
 .header-title img {
@@ -78,6 +74,10 @@ body {
     color: #f1b8ff;
 }
 
+.main {
+    background: linear-gradient(45deg, pink, white, pink, white, pink, white, pink, white);
+}
+
 .footer {
     background: url(../images/bg-tijolo-vermelho-azul.jpg);
 }
@@ -102,4 +102,67 @@ body {
     border-radius: 20px;
     background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
     box-shadow: 0 0 15px 1px black;
+}
+
+@media screen and (max-width: 640px) {
+
+    .header-title-container, .footer-container, .container {
+        width: 90vw;
+    }
+
+    .header-title img {
+        margin: 40px calc((100% - 113px) / 2);
+    }
+
+    .header-title h1 {
+        position: static;
+        text-align: center;
+        padding: 0 0 40px 0;
+    }
+
+    .header-nav {
+        padding: 30px 0;
+    }
+
+    .nav-menu li {
+        display: block;
+        margin: 30px calc((100% - 250px) / 2);
+    }
+
+    .footer img {
+    margin: 40px calc((100% - 188px) / 2) 20px;
+    border-radius: 50px;
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 1000px) {
+
+    .header-title-container, .footer-container, .container {
+        width: 90vw;
+    }
+
+    .header-title img {
+        margin: 40px 0 40px 40px;
+    }
+
+    .header-title h1 {
+        right: 40px;
+    }
+
+    .header-nav {
+        padding: 30px 0;
+    }
+
+    .nav-menu li {
+        display: block;
+        margin: 30px calc((100% - 60%) / 2);
+        width: 60%;
+    }
+
+    .footer img {
+    margin: 40px calc((100% - 188px) / 2) 20px;
+    border-radius: 50px;
+    }
+
 }
